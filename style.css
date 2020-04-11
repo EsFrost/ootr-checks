@@ -2,6 +2,10 @@ body {
 	background: #1c1b1c;
 }
 
+a {
+	color: #637cb7;
+}
+
 h1, input, body {
 	color: #cccccc;
 }
