@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="icon" href="./site.png">
+	<title>No Logic Checks For Cogsy</title>
+</head>
+
+<body>
+
+	<div class="box-entrance">
+		<input name="special-entrance" value="Kokiri Forest -> Links House" type="checkbox" id="links-house-box">
+		<label class="labelBox" for="links-house-box">
+			<div class="image-container" title="Link's House">
+				<img src="./src/media/icons/links_house.png" alt="Link's House" />
+				<div class="after"></div>
+			</div>
+		</label>
+		
+		<input name="entrances" value="Deku Tree Lobby" type="checkbox" id="deku-tree-lobby">
+		<label class="labelBox" for="deku-tree-lobby">
+			<div class="image-container" title="Deku Tree Entrance">
+				<img src="./src/media/icons/deku_tree.png" alt="Deku Tree Entrance" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="entrances" value="Dodongos Cavern Beginning" type="checkbox" id="dc-beginning">
+		<label class="labelBox" for="dc-beginning">
+			<div class="image-container" title="Dodongo Cavern Entrance">
+				<img src="./src/media/icons/dc.png" alt="Dodong Cavern Entrance" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="entrances" value="Jabu Jabus Belly Beginning" type="checkbox" id="jj-belly">
+		<label class="labelBox" for="jj-belly">
+			<div class="image-container" title="Jabu Jabu's Belly Entrance">
+				<img src="./src/media/icons/jj_belly.png" alt="Jabu Jabu's Belly Entrance" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="entrances" value="Temple of Time" type="checkbox" id="temple-of-time">
+		<label class="labelBox" for="temple-of-time">
+			<div class="image-container" title="Temple of Time">
+				<img src="./src/media/icons/temple_of_time.png" alt="Temple of Time" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="entrances" value="Forest Temple Lobby" type="checkbox" id="forest-temple">
+		<label class="labelBox" for="forest-temple">
+			<div class="image-container" title="Forest Temple">
+				<img src="./src/media/icons/forest_temple.png" alt="Forest Temple" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="entrances" value="Fire Temple Lower" type="checkbox" id="fire-temple">
+		<label class="labelBox" for="fire-temple">
+			<div class="image-container" title="Fire Temple">
+				<img src="./src/media/icons/fire_temple.png" alt="Fire Temple" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="entrances" value="Water Temple Lobby" type="checkbox" id="water-temple">
+		<label class="labelBox" for="water-temple">
+			<div class="image-container" title="Water Temple">
+				<img src="./src/media/icons/water_temple.png" alt="Water Temple" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="entrances" value="Shadow Temple Entryway" type="checkbox" id="shadow-temple">
+		<label class="labelBox" for="shadow-temple">
+			<div class="image-container" title="Shadow Temple">
+				<img src="./src/media/icons/shadow_temple.png" alt="Shadow Temple" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="entrances" value="Spirit Temple Lobby" type="checkbox" id="spirit-temple">
+		<label class="labelBox" for="spirit-temple">
+			<div class="image-container" title="Spirit Temple">
+				<img src="./src/media/icons/spirit_temple.png" alt="Spirit Temple" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="entrances" value="Bottom of the Well" type="checkbox" id="botw">
+		<label class="labelBox" for="botw">
+			<div class="image-container" title="Bottom of the Well Entrance">
+				<img src="./src/media/icons/botw.png" alt="Bottom of the Well Entrance" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="entrances" value="Ice Cavern Beginning" type="checkbox" id="ice-cavern">
+		<label class="labelBox" for="ice-cavern">
+			<div class="image-container" title="Ice Cavern Entrance">
+				<img src="./src/media/icons/ice_cavern.png" alt="Ice Cavern Entrance" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		
+	</div>
+
+	<hr />
+
+	<div class="box-locations">
+		
+		<input name="locations" value="Zeldas Lullaby" type="checkbox" id="zl">
+		<label class="labelBox" for="zl">
+			<div class="image-container">
+				<img src="./src/media/icons/zl.png" alt="Zelda's Lullaby" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="locations" value="Eponas Song" type="checkbox" id="epona">
+		<label class="labelBox" for="epona">
+			<div class="image-container">
+				<img src="./src/media/icons/epona.png" alt="Epona's Song" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="locations" value="Sarias Song" type="checkbox" id="saria">
+		<label class="labelBox" for="saria">
+			<div class="image-container">
+				<img src="./src/media/icons/saria.png" alt="Saria's Song" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="locations" value="Suns Song" type="checkbox" id="sun">
+		<label class="labelBox" for="sun">
+			<div class="image-container">
+				<img src="./src/media/icons/sun.png" alt="Sun's Song" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="locations" value="Song of Time" type="checkbox" id="song-of-time">
+		<label class="labelBox" for="song-of-time">
+			<div class="image-container">
+				<img src="./src/media/icons/song_of_time.png" alt="Song of Time" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="locations" value="Song of Storms" type="checkbox" id="song-of-storms">
+		<label class="labelBox" for="song-of-storms">
+			<div class="image-container">
+				<img src="./src/media/icons/song_of_storms.png" alt="Song of Storms" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="locations" value="Prelude of Light" type="checkbox" id="prelude">
+		<label class="labelBox" for="prelude">
+			<div class="image-container">
+				<img src="./src/media/icons/prelude.png" alt="Prelude of Light" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="locations" value="Minuet of Forrest" type="checkbox" id="minuet">
+		<label class="labelBox" for="minuet">
+			<div class="image-container">
+				<img src="./src/media/icons/minuet.png" alt="Minuet of Forest" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="locations" value="Bolero of Fire" type="checkbox" id="bolero">
+		<label class="labelBox" for="bolero">
+			<div class="image-container">
+				<img src="./src/media/icons/bolero.png" alt="Bolero of Fire" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="locations" value="Serenade of Water" type="checkbox" id="serenade">
+		<label class="labelBox" for="serenade">
+			<div class="image-container">
+				<img src="./src/media/icons/serenade.png" alt="Serenade of Water" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<input name="locations" value="Nocturne of Shadow" type="checkbox" id="nocturne">
+		<label class="labelBox" for="nocturne">
+		<div class="image-container">
+				<img src="./src/media/icons/nocturne.png" alt="Nocturne of Shadow" />
+				<div class="after"></div>
+			</div></label>
+
+		<input name="locations" value="Requiem of Spirit" type="checkbox" id="requiem">
+		<label class="labelBox" for="requiem">
+			<div class="image-container">
+				<img src="./src/media/icons/requiem.png" alt="Requiem of Spirit" />
+				<div class="after"></div>
+			</div>
+		</label>
+
+		<hr />
+
+
+		<div>
+			
+			<input name="locations" value="Kokiri Emerald" type="checkbox" id="emerald">
+			<label class="labelBox" for="emerald">
+				<div class="image-container">
+					<img src="./src/media/icons/emerald.png" alt="Kokiri Emerald" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="locations" value="Goron Ruby" type="checkbox" id="ruby">
+			<label class="labelBox" for="ruby">
+				<div class="image-container">
+					<img src="./src/media/icons/ruby.png" alt="Goron Ruby" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="locations" value="Zora Sapphire" type="checkbox" id="sapphire">
+			<label class="labelBox" for="sapphire">
+				<div class="image-container">
+					<img src="./src/media/icons/sapphire.png" alt="Zora Sapphire" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+		</div>
+
+		<div>
+
+			<input name="locations" value="Light Medallion" type="checkbox" id="light-medallion">
+			<label class="labelBox" for="light-medallion">
+				<div class="image-container">
+					<img src="./src/media/icons/light_medallion.png" alt="Light Medallion" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="locations" value="Forest Medallion" type="checkbox" id="forest-medallion">
+			<label class="labelBox" for="forest-medallion">
+				<div class="image-container">
+					<img src="./src/media/icons/forest_medallion.png" alt="Forest Medallion" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="locations" value="Fire Medallion" type="checkbox" id="fire-medallion">
+			<label class="labelBox" for="fire-medallion">
+				<div class="image-container">
+					<img src="./src/media/icons/fire_medallion.png" alt="Fire Medallion" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="locations" value="Water Medallion" type="checkbox" id="water-medallion">
+			<label class="labelBox" for="water-medallion">
+				<div class="image-container">
+					<img src="./src/media/icons/water_medallion.png" alt="Water Medallion" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="locations" value="Shadow Medallion" type="checkbox" id="shadow-medallion">
+			<label class="labelBox" for="shadow-medallion">
+				<div class="image-container">
+					<img src="./src/media/icons/shadow_medallion.png" alt="Shadow Medallion" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="locations" value="Spirit Medallion" type="checkbox" id="spirit-medallion">
+			<label class="labelBox" for="spirit-medallion">
+				<div class="image-container">
+					<img src="./src/media/icons/spirit_medallion.png" alt="Spirit Medallion" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+		</div>
+
+	</div>
+
+	<hr />
+
+	<div class="box-items">
+		
+		<input name="items" value="Deku Stick Capacity" type="checkbox" id="sticks">
+		<label class="labelBox" for="sticks">
+			<div class="image-container">
+					<img src="./src/media/icons/deku_sticks.png" alt="Deku Sticks" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<input name="items" value="Deku Nut Capacity" type="checkbox" id="nuts">
+		<label class="labelBox" for="nuts">
+			<div class="image-container">
+					<img src="./src/media/icons/deku_nuts.png" alt="Deku Nuts" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<input name="items" value="Bomb Bag" type="checkbox" id="bombs">
+		<label class="labelBox" for="bombs">
+			<div class="image-container">
+					<img src="./src/media/icons/bombs.png" alt="Bombs" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<input name="items" value="Bow" type="checkbox" id="bow">
+		<label class="labelBox" for="bow">
+			<div class="image-container">
+					<img src="./src/media/icons/bow.png" alt="Bow" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<input name="items" value="Fire Arrows" type="checkbox" id="fire-arrows">
+		<label class="labelBox" for="fire-arrows">
+			<div class="image-container">
+					<img src="./src/media/icons/fire_arrows.png" alt="Fire Arrows" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<input name="items" value="Ice Arrows" type="checkbox" id="ice-arrows">
+		<label class="labelBox" for="ice-arrows">
+			<div class="image-container">
+					<img src="./src/media/icons/ice_arrows.png" alt="Ice Arrows" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<input name="items" value="Light Arrows" type="checkbox" id="light-arrows">
+		<label class="labelBox" for="light-arrows">
+			<div class="image-container">
+					<img src="./src/media/icons/light_arrows.png" alt="Light Arrows" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<input name="items" value="Slingshot" type="checkbox" id="slingshot">
+		<label class="labelBox" for="slingshot">
+			<div class="image-container">
+					<img src="./src/media/icons/slingshot.png" alt="Slingshot" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<input name="items" value="Boomerang" type="checkbox" id="boomerang">
+		<label class="labelBox" for="boomerang">
+			<div class="image-container">
+					<img src="./src/media/icons/boomerang.png" alt="Boomerang" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<input name="items" value="Lens of Truth" type="checkbox" id="lens">
+		<label class="labelBox" for="lens">
+			<div class="image-container">
+					<img src="./src/media/icons/lens.png" alt="Lens of Truth" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<input name="items" value="Ocarina" type="checkbox" id="ocarina">
+		<label class="labelBox" for="ocarina">
+			<div class="image-container">
+					<img src="./src/media/icons/ocarina.png" alt="Ocarina" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<input name="items" value="Magic Bean Pack" type="checkbox" id="beans">
+		<label class="labelBox" for="beans">
+			<div class="image-container">
+					<img src="./src/media/icons/beans.png" alt="Magic Beans" />
+					<div class="after"></div>
+				</div>
+		</label>
+
+		<div>
+			
+			<input name="items" value="Hammer" type="checkbox" id="hammer">
+			<label class="labelBox" for="hammer">
+				<div class="image-container">
+					<img src="./src/media/icons/hammer.png" alt="Hammer" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Progressive Hookshot" type="checkbox" id="hookshot">
+			<label class="labelBox" for="items">
+				<div class="image-container">
+					<img src="./src/media/icons/hookshot.png" alt="Hookshot" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Weird Egg" type="checkbox" id="egg">
+			<label class="labelBox" for="egg">
+				<div class="image-container">
+					<img src="./src/media/icons/egg.png" alt="Weird Egg" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Prescription" type="checkbox" id="prescription">
+			<label class="labelBox" for="prescription">
+			<div class="image-container">
+					<img src="./src/media/icons/prescription.png" alt="Prescription" />
+					<div class="after"></div>
+				</div></label>
+
+			<input name="items" value="Bottle with Letter" type="checkbox" id="letter">
+			<label class="labelBox" for="letter">
+				<div class="image-container">
+					<img src="./src/media/icons/letter.png" alt="Bottle with Ruto's letter" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Magic Meter" type="checkbox" id="magic">
+			<label class="labelBox" for="magic">
+				<div class="image-container">
+					<img src="./src/media/icons/magic_meter.png" alt="Magic Meter" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Progressive Wallet" type="checkbox" id="wallet">
+			<label class="labelBox" for="wallet">
+				<div class="image-container">
+					<img src="./src/media/icons/wallet.png" alt="Wallet" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Gerudo Membership Card" type="checkbox" id="gerudo-card">
+			<label class="labelBox" for="gerudo-card">
+				<div class="image-container">
+					<img src="./src/media/icons/gerudo_card.png" alt="Gerudo Membership Card" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Stone of Agony" type="checkbox" id="stone-of-agony">
+			<label class="labelBox" for="stone-of-agony">
+				<div class="image-container">
+					<img src="./src/media/icons/stone_of_agony.png" alt="Stone/Shard of Agony" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Progressive Scale" type="checkbox" id="scale">
+			<label class="labelBox" for="scale">
+				<div class="image-container">
+					<img src="./src/media/icons/scale.png" alt="Scale" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Dins Fire" type="checkbox" id="din">
+			<label class="labelBox" for="din">
+				<div class="image-container">
+					<img src="./src/media/icons/dins_fire.png" alt="Din's Fire" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Farore's Wind" type="checkbox" id="farore">
+			<label class="labelBox" for="farore">
+				<div class="image-container">
+					<img src="./src/media/icons/farores_wind.png" alt="Farore's Wind" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+		</div>
+
+		
+		<div>
+			
+			<input name="items" value="Nayrus Love" type="checkbox" id="nayru">
+			<label class="labelBox" for="nayru">
+				<div class="image-container">
+					<img src="./src/media/icons/nayrus_love.png" alt="Nayru's Love" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Kokiri Sword" type="checkbox" id="kokiri-sword">
+			<label class="labelBox" for="kokiri-sword">
+				<div class="image-container">
+					<img src="./src/media/icons/kokiri_sword.png" alt="Kokiri Sword" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Biggoron Sword" type="checkbox" id="bgs">
+			<label class="labelBox" for="bgs">
+				<div class="image-container">
+					<img src="./src/media/icons/bgs.png" alt="Biggoron Sword" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Deku Shield" type="checkbox" id="deku-shield">
+			<label class="labelBox" for="deku-shield">
+				<div class="image-container">
+					<img src="./src/media/icons/deku_shield.png" alt="Deku Shield" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Hylian Shield" type="checkbox" id="hylian-shield">
+			<label class="labelBox" for="hylian-shield">
+				<div class="image-container">
+					<img src="./src/media/icons/hylian_shield.png" alt="Hylian Shield" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Mirror Shield" type="checkbox" id="mirror-shield">
+			<label class="labelBox" for="mirror-shield">
+				<div class="image-container">
+					<img src="./src/media/icons/mirror_shield.png" alt="Mirror Shield" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Goron Tunic" type="checkbox" id="goron-tunic">
+			<label class="labelBox" for="goron-tunic">
+				<div class="image-container">
+					<img src="./src/media/icons/goron_tunic.png" alt="Goron Tunic" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Zora Tunic" type="checkbox" id="zora-tunic">
+			<label class="labelBox" for="zora-tunic">
+				<div class="image-container">
+					<img src="./src/media/icons/zora_tunic.png" alt="Zora Tunic" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Iron Boots" type="checkbox" id="iron-boots">
+			<label class="labelBox" for="iron-boots">
+				<div class="image-container">
+					<img src="./src/media/icons/iron_boots.png" alt="Iron Boots" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Hover Boots" type="checkbox" id="hover-boots">
+			<label class="labelBox" for="hover-boots">
+				<div class="image-container">
+					<img src="./src/media/icons/hover_boots.png" alt="Hover Boots" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+			<input name="items" value="Progressive Strength Upgrade" type="checkbox" id="strength">
+			<label class="labelBox" for="strength">
+			<div class="image-container">
+					<img src="./src/media/icons/strength.png" alt="Strength Upgrade" />
+					<div class="after"></div>
+				</div></label>
+
+			<input name="items" value="Double Defense" type="checkbox" id="dd">
+			<label class="labelBox" for="dd">
+				<div class="image-container">
+					<img src="./src/media/icons/dd.png" alt="Double Defense" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+		</div>
+
+		
+		<div>
+			
+			<input name="items" value="Boss Key (Ganons Castle)" type="checkbox" id="ganons_bosskey">
+			<label class="labelBox" for="ganons_bosskey">
+				<div class="image-container">
+					<img src="./src/media/icons/ganons_bosskey.png" alt="Ganon's Bosskey" />
+					<div class="after"></div>
+				</div>
+			</label>
+
+		</div>
+		
+	</div>
+
+	<hr />
+
+	<div class="controls">
+		<button onclick="clearAll()">Clear selection</button>
+		<button onclick="selectAll()">Select all</button>
+	</div>
+
+	<hr />
+
+	<div>
+		<label class="labelBoxCustom" for="file-input">Upload your spoiler log here.</label>
+		<input type="file" id="file-input" accept="application/json" name="inputFile" />
+		<button onclick="leButton()">Check</button>
+	</div>
+
+	<div id="seed-name"></div>
+	<div id="update"></div>
+
+	<button onclick="topFunction()" id="topBtn" title="Go to top">Back to the top</button>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	
+	<script src="./app.js"></script>
+
+</body>
+</html>
